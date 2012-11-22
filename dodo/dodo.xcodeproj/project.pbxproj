@@ -21,6 +21,7 @@
 		BC38B0C4164DC945009C3D20 /* dodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC38B0C2164DC945009C3D20 /* dodo.xcdatamodeld */; };
 		BC38B0C7164DC945009C3D20 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC38B0C6164DC945009C3D20 /* MasterViewController.m */; };
 		BC38B0CA164DC945009C3D20 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC38B0C9164DC945009C3D20 /* DetailViewController.m */; };
+		BC673246165EEA59009E6BCE /* AddToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC673245165EEA59009E6BCE /* AddToDoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		BC38B0C6164DC945009C3D20 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BC38B0C8164DC945009C3D20 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		BC38B0C9164DC945009C3D20 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BC673244165EEA59009E6BCE /* AddToDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddToDoViewController.h; path = ../AddToDoViewController.h; sourceTree = "<group>"; };
+		BC673245165EEA59009E6BCE /* AddToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddToDoViewController.m; path = ../AddToDoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				BC38B0C6164DC945009C3D20 /* MasterViewController.m */,
 				BC38B0C8164DC945009C3D20 /* DetailViewController.h */,
 				BC38B0C9164DC945009C3D20 /* DetailViewController.m */,
+				BC673244165EEA59009E6BCE /* AddToDoViewController.h */,
+				BC673245165EEA59009E6BCE /* AddToDoViewController.m */,
 				BC38B0C2164DC945009C3D20 /* dodo.xcdatamodeld */,
 				BC38B0AE164DC945009C3D20 /* Supporting Files */,
 			);
@@ -190,6 +195,7 @@
 				BC38B0C4164DC945009C3D20 /* dodo.xcdatamodeld in Sources */,
 				BC38B0C7164DC945009C3D20 /* MasterViewController.m in Sources */,
 				BC38B0CA164DC945009C3D20 /* DetailViewController.m in Sources */,
+				BC673246165EEA59009E6BCE /* AddToDoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +311,7 @@
 				BC38B0CF164DC945009C3D20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

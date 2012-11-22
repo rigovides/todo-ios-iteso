@@ -6,11 +6,11 @@
         </attribute>
         <userInfo/>
     </entity>
-    <entity name="Todo" syncable="YES">
+    <entity name="ToDo" syncable="YES">
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
-        <element name="Todo" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="ToDo" positionX="160" positionY="192" width="128" height="60"/>
     </elements>
 </model>
