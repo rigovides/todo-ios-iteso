@@ -107,6 +107,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
+    NSLog(@"adsa");
+    
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
@@ -217,6 +220,12 @@
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+}
+
+#pragma mark - custom messages
+- (IBAction)addToDoButtonAction:(id)sender
+{
+    [self performSegueWithIdentifier:@"addToDoSegue" sender:self];
 }
 
 @end
