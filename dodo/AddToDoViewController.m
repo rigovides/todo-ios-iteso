@@ -7,6 +7,7 @@
 //
 
 #import "AddToDoViewController.h"
+#import "MasterViewController.h"
 
 @interface AddToDoViewController ()
 
@@ -42,6 +43,19 @@
 
 - (IBAction)doneButtonAction:(id)sender
 {
+    
+    id vc = self.presentingViewController;
+    
+    
+    if([vc isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navController = (UINavigationController *)vc;
+        
+        MasterViewController *masterController = (MasterViewController *)[navController.viewControllers objectAtIndex:0];
+        
+        [masterController addNewToDo:self.toDoContentTextView.text];
+    }
+    
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 

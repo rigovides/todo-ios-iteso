@@ -18,4 +18,6 @@
 
 - (IBAction)addToDoButtonAction:(id)sender;
 
+- (void)addNewToDo:(id)newToDo;
+
 @end
