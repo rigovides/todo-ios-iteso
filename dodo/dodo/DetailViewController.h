@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MasterViewController.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSManagedObject *detailItem;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+- (IBAction)deleteToDoButtonAction:(id)sender;
+
 @end

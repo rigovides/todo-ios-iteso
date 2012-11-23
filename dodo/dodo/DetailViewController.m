@@ -48,4 +48,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Class messages
+- (IBAction)deleteToDoButtonAction:(id)sender
+{
+    MasterViewController *masterController = (MasterViewController *)[self.navigationController.viewControllers objectAtIndex:0];
+    [masterController deleteToDo:self.detailItem];
+    
+}
+
 @end

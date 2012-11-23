@@ -19,5 +19,6 @@
 - (IBAction)addToDoButtonAction:(id)sender;
 
 - (void)addNewToDo:(id)newToDo;
+- (void)deleteToDo:(NSManagedObject *)toDo;
 
 @end

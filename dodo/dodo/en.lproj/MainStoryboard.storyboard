@@ -123,11 +123,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wf-OZ-YP8">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteToDoButtonAction:" destination="Frq-kr-03r" eventType="touchUpInside" id="U1y-jN-AB3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2wf-OZ-YP8" firstAttribute="centerX" secondItem="D0j-hz-o4N" secondAttribute="centerX" type="default" id="45h-tl-p5S"/>
+                            <constraint firstItem="2wf-OZ-YP8" firstAttribute="centerX" secondItem="iII-Vc-Oco" secondAttribute="centerX" type="default" id="UIK-qb-DO3"/>
                             <constraint firstItem="iII-Vc-Oco" firstAttribute="top" secondItem="D0j-hz-o4N" secondAttribute="top" constant="206" id="Yqp-ER-hnW"/>
-                            <constraint firstItem="iII-Vc-Oco" firstAttribute="centerX" secondItem="D0j-hz-o4N" secondAttribute="centerX" type="default" id="lXV-YP-oZ6"/>
+                            <constraint firstAttribute="bottom" secondItem="2wf-OZ-YP8" secondAttribute="bottom" constant="75" id="dJ5-wM-dU2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="To Do Detail" id="JzF-Iz-DsT"/>
@@ -151,6 +166,7 @@
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="deleteToDoButtonAction:"/>
                 <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
