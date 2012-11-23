@@ -110,7 +110,7 @@
             </objects>
             <point key="canvasLocation" x="459" y="762"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail View Controller - To Do Detail-->
         <scene sceneID="Tth-NF-1Bh">
             <objects>
                 <viewController id="Frq-kr-03r" customClass="DetailViewController" sceneMemberID="viewController">
@@ -130,7 +130,7 @@
                             <constraint firstItem="iII-Vc-Oco" firstAttribute="centerX" secondItem="D0j-hz-o4N" secondAttribute="centerX" type="default" id="lXV-YP-oZ6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JzF-Iz-DsT"/>
+                    <navigationItem key="navigationItem" title="To Do Detail" id="JzF-Iz-DsT"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="iII-Vc-Oco" id="NNO-qi-2db"/>
                     </connections>
